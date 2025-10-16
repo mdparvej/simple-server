@@ -1,7 +1,7 @@
 
 const serverless = require('serverless-http');
 
-const app = require('./api/server');
+const app = require('../index');
 // Middleware
 
 
