@@ -2,7 +2,7 @@
 const serverless = require('serverless-http');
 
 const app = require('../index');
-const router = require('express').Router;
+const router = require('express').Router();
 
 router.get('/ping', (req, res) => {
     res.json({ ok: true, msg: 'pong' });
