@@ -12,6 +12,7 @@ router.get('/hello/:name?', (req, res) => {
     const name = req.params.name || 'world';
     res.json({ hello: name });
 });
+app.use('/api', router);
 
 // Export both app & handler
 module.exports = app;
